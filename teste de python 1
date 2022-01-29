@@ -1,0 +1,36 @@
+        #imposto
+
+salarioBase = float(input("Informe o seu salario:"))
+
+if salarioBase <= 1200.00:
+    imposto = 8 / 100 * salarioBase
+elif salarioBase <= 3000.00:
+    imposto = 10 / 100 * salarioBase
+elif salarioBase <= 5000.00:
+    imposto = 12 / 100 * salarioBase
+else:
+    imposto = 680.00
+    
+print(f"Seu imposto e:{imposto} ")
+
+      #novo salario
+
+if salarioBase <= 1200.00:
+    novoSalario = 500.00 + salarioBase
+elif salarioBase <= 3000.00:
+    novoSalario = 400.00 + salarioBase
+elif salarioBase <= 5000.00:
+    novoSalario = 300.00 + salarioBase
+else:
+    novoSalario = 200.00 + salarioBase
+    
+print(f"Seu novo salario é:{novoSalario} ")
+
+      #classificação
+
+if salarioBase <= 3000.00:
+    print("grupo 1")
+elif salarioBase <= 5000.00:
+    print("grupo 2")
+else:
+    print("grupo 3")
