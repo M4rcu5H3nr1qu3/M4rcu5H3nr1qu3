@@ -1,0 +1,11 @@
+valorX = int(input(" digite um valor para x :"))
+valorY = int(input("digite valor para y :"))
+valorZ = int(input("digite valor para z "))
+if valorX == valorY == valorZ:
+    print(" É um triângulo equilátero ")
+elif valorX != valorY == valorZ or valorX == valorY != valorZ:
+    print(" É um triângulo isósceles ")
+elif valorX != valorY != valorZ:
+    print(" É um triângulo escaleno ")
+else:
+    print(" Para ser um triân...")
