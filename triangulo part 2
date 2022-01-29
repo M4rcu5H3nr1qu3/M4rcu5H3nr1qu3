@@ -1,0 +1,28 @@
+print('Olá Seja Bem vindo ao programa de identificação de Triangulos!!')
+
+a = input('Digite o valor do (Lado A):')
+b = input('Digite o valor do (Lado B):')
+c = input('Digite o valor do (Lado C):')
+'''
+Equilátero - Todos lados iguais
+
+Isósceles - Dois lados iguais
+
+Escaleno - Todos os lados diferentes
+'''
+if (a + b > c or a + c > b or b + c > a):
+
+    if a == b and a == c and b == c:
+        tipodetriangulo = 'Equilátero'
+
+    elif a == b or a == c or b == c:
+        tipodetriangulo = 'Isósceles'
+
+    else:
+        tipodetriangulo = 'Escaleno'
+
+    print(
+        f'nas medidas informadas correspondem a de um Triângulo {tipodetriangulo}.'
+    )
+else:
+    print('Os lados informados não formam um triângulo!')
