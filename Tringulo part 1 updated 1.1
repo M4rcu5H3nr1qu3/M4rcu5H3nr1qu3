@@ -1,0 +1,26 @@
+import os
+  
+i = input("Desejas iniciar o identificador de triangulos(s/n):")
+  
+while i != "n" :
+    valorX = int(input(" digite um valor para x :"))
+    if valorX <= 0 :
+      print("\n","Não é um triangulo!")
+      break
+    valorY = int(input("digite valor para y :"))
+    if valorY <= 0 :
+      print("\n","Não é um triangulo!")
+      break
+    valorZ = int(input("digite valor para z "))
+    if valorZ <= 0 :
+      print("\n","Não é um triangulo!")
+      break
+    if valorX == valorY == valorZ:
+      print("\n"," É um triângulo equilátero ")
+    elif valorX != valorY == valorZ or valorX == valorY != valorZ:
+      print("\n","É um triângulo isósceles ")
+    elif valorX != valorY != valorZ:
+      print("\n","É um triângulo escaleno ")
+    else:
+      print(" Para ser um triân...")
+    os.system('clear')  
